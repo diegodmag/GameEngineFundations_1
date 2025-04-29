@@ -17,9 +17,22 @@ struct Matrix3D{
 
     Matrix3D(const Vector3D& a,const Vector3D& b, const Vector3D& c ); 
 
+    float& operator() (int i, int j);
+
+    const float& operator() (int i, int j) const; 
+    
+    Vector3D& operator [] (int j); 
+
+    const Vector3D& operator [] (int j) const; 
+    
     std::string toString() const; 
     
 };
+
+
+Matrix3D operator*(const Matrix3D& A, const Matrix3D& B);
+
+Vector3D operator *(const Matrix3D& M, const Vector3D& v); 
 
 #endif
 
