@@ -2,28 +2,34 @@
 #include "Vector3D.h"
 #include "Matrix3D.h"
 
+
 using namespace std; 
+
 
 
 int main(){
 
-    Vector3D a(3.0f, 8.0f, -1.0f); 
+    Vector3D a(1.0f, 2.0f, 3.0f); 
     Vector3D b(2.0f, 7.0f, -4.0f);
     Vector3D c(1.0f, 6.0f, -5.0f);
 
-    const Matrix3D A(a,b,c); 
+    a*2; 
 
-    cout<< A.toString() << endl; 
+    cout << a.toString() << endl;
 
-    Vector3D v(2.0f, 4.0f, 6.0f);
+    //const Matrix3D A(a,b,c); 
 
-    cout << v.toString() << endl; 
+    //cout<< A.toString() << endl; 
 
-    Vector3D Av = A*v; 
+    // Vector3D v(2.0f, 4.0f, 6.0f);
 
-    cout << Av.toString() << endl; 
+    // cout << v.toString() << endl; 
 
+    // Vector3D Av = A*v; 
 
+    // cout << Av.toString() << endl; 
+
+    
     
 
 
